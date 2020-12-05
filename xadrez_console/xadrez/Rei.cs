@@ -75,9 +75,9 @@ namespace xadrez {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
-            //#Jogada especial roque
+            //#JogadaEspecial roque
             if (QtdMovimentos == 0 && !Partida.Xeque) {
-                //#Jogada especial roque pequeno.
+                //#JogadaEspecial roque pequeno.
                 Posicao posT1 = new Posicao(Posicao.Linha, Posicao.Coluna + 3);
                 if (TesteTorreParaRoque(posT1)) {
                     Posicao p1 = new Posicao(Posicao.Linha, Posicao.Coluna + 1);
@@ -87,7 +87,7 @@ namespace xadrez {
                     }
                 }
 
-                //#Jogada especial roque grande.
+                //#JogadaEspecial roque grande.
                 Posicao posT2 = new Posicao(Posicao.Linha, Posicao.Coluna - 4);
                 if (TesteTorreParaRoque(posT2)) {
                     Posicao p1 = new Posicao(Posicao.Linha, Posicao.Coluna - 1);
